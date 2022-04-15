@@ -9,7 +9,7 @@
   },
   "scripts": {
     "build": "tsc",
-    "start": "./node_modules/.bin/pm2 start src/server.ts --watch",
+    "start": "./node_modules/.bin/pm2 start src/Bot.ts --watch",
     "watch": "npm-watch",
     "lint": "eslint . --ext .ts",
     "lint:fix": "eslint . --ext .ts --fix"
