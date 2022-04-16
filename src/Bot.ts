@@ -11,6 +11,7 @@ const tempChannels = new TempChannels(client);
 ready(client);
 interactionCreate(client);
 tempChannels.registerChannel(`${process.env.CHANNEL_ID}`, {
+    childCategory: `${process.env.CATEGORY_ID}`,
     childAutoDeleteIfEmpty: true,
     childAutoDeleteIfOwnerLeaves: true,
     childFormat: (member, count) => `#${count} | ${member.user.username}'s lounge`
