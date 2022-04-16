@@ -10,6 +10,7 @@
   "scripts": {
     "build": "tsc",
     "start": "./node_modules/.bin/pm2 start src/Bot.ts --watch",
+    "start2": "node dist/Bot.js",
     "watch": "npm-watch",
     "lint": "eslint . --ext .ts",
     "lint:fix": "eslint . --ext .ts --fix"
