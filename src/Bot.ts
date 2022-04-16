@@ -14,6 +14,6 @@ tempChannels.registerChannel(`${process.env.CHANNEL_ID}`, {
     childCategory: `${process.env.CATEGORY_ID}`,
     childAutoDeleteIfEmpty: true,
     childAutoDeleteIfOwnerLeaves: true,
-    childFormat: (member, count) => `${member.user.username}'s Tent`
+    childFormat: (member, count) => `⎝⧹${member.user.username}'s Tent⧸⎠`
 })
 client.login(process.env.BOT_TOKEN);
