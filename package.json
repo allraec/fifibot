@@ -25,7 +25,8 @@
     "discord.js": "^13.6.0",
     "dotenv": "^16.0.0",
     "mongoose": "^6.2.10",
-    "npm-watch": "^0.11.0"
+    "npm-watch": "^0.11.0",
+    "pm2": "^5.2.0"
   },
   "devDependencies": {
     "@types/node": "^17.0.23",
