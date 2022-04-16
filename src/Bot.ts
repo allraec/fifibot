@@ -10,8 +10,8 @@ const client = new Client({intents: IntentOptions});
 const tempChannels = new TempChannels(client);
 ready(client);
 interactionCreate(client);
-tempChannels.registerChannel("964709389409873940", {
-    childCategory: "812202088419426356",
+tempChannels.registerChannel(`${process.env.CHANNEL_ID}`, {
+    childCategory: `${process.env.CATEGORY_ID}`,
     childAutoDeleteIfEmpty: true,
     childAutoDeleteIfOwnerLeaves: true,
     childFormat: (member, count) => `#${count} | ${member.user.username}'s lounge`
